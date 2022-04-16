@@ -4,10 +4,10 @@ models:
   - name: stg_payments
     description: Order payments
     columns:
-      - name: id
+      - name: payment_id
         description: PK for stg_payments
         tests:
           - unique
           - not_null
-      - name: paymentmethod
+      - name: payment_method
         description: How the payment was made
