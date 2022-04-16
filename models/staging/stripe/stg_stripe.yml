@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_payments
+    description: Order payments
+    columns:
+      - name: id
+        description: PK for stg_payments
+        tests:
+          - unique
+          - not_null
+      - name: paymentmethod
+        description: How the payment was made
